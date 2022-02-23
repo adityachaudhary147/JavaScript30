@@ -6,7 +6,20 @@
   <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
 </head>
 <body>
+  <script src='https://www.cornify.com/js/cornify.js'> </script>
 <script>
+  const store=[];
+  window.addEventListener('keyup',(e)=>{
+    console.log(e);
+    store.push(e.key);
+    console.log(store);
+    if(store.join('').includes("hello"))
+    {
+      console.log("found hello");
+      cornify_add();
+    }
+  });
+
 </script>
 </body>
 </html>
